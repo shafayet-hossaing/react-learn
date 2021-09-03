@@ -1,9 +1,9 @@
 import React from "react";
-const Clock = (props) => {
+const Clock = ({local}) => {
     return (
         <>
-        <h2>hello</h2>
-            <h1>{new Date().toLocaleTimeString(props.local)}</h1>
+            <h2>Clock One</h2>
+            <h1>{new Date().toLocaleTimeString(local)}</h1>
         </>
     )
 }
